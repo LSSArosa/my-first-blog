@@ -25,7 +25,10 @@ SECRET_KEY = '#(hp#1t3!_$cxvm^9&6supgjxa0-&)ln=0-3fe+1$e!b406mgb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lssa.pythonanywhere.com',]
+ALLOWED_HOSTS = [
+    'lssa.pythonanywhere.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
