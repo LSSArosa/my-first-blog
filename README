@@ -1,0 +1,40 @@
+installation 
+https://tutorial.djangogirls.org/fr/installation/#mettre-en-place-virtualenv-et-installer-django
+
+Donc, commençons par créer un environnement virtuel de programmation (ou virtualenv). Chaque projet aura sa propre configuration en Python/Django grâce à virtualenv. 
+
+Dans ce tutoriel, nous allons utiliser un nouveau dossier djangogirls que vous allez créer dans votre dossier home :
+
+mkdir djangogirls
+cd djangogirls
+Nous allons créer un virtualenv appelé myvenv. Pour cela, nous taperons une commande qui ressemblera à :
+
+python3 -m venv myvenv
+
+NOTE: initialiser un environnement virtuel sous Ubuntu 14.04 de cette manière donne l'erreur suivante :
+
+Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+Pour résoudre ce problème, utilisez plutôt la commande virtualenv.
+
+~/djangogirls$ sudo apt-get install python-virtualenv
+~/djangogirls$ virtualenv --python=python3.4 myvenv
+
+
+apprenti@apprenti-ThinkPad-T410:~/djangogirls
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+Using base prefix '/usr'
+New python executable in myvenv/bin/python3.4
+Not overwriting existing python script myvenv/bin/python (you must use myvenv/bin/python3.4)
+Installing setuptools, pip...done.
+
+
+Quand vous travaillez dans un environnement virtuel, la commande python fera automatiquement référence à la bonne version de Python. Vous pouvez donc utiliser python plutôt que python3.
+
+Sous Linux :
+Si vous obtenez une erreur lorsque vous utilisez pip sous Ubuntu 12.04, tapez la commande python -m pip install -U --force-reinstall pip pour réparer l'installation de pip dans votre virtualenv.
+
+
+Installing collected packages: django
+Successfully installed django-1.10.6
+(myvenv)apprenti@apprenti-ThinkPad-T410:~/djangogirls
